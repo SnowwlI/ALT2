@@ -3,8 +3,11 @@ import streamlit as st
 st.markdown(
     """
     <style>
-    /* Aplica gradiente ao container principal */
-    .stApp {
+    /* Garante que o fundo ocupa 100% da altura */
+    html, body, .stApp {
+        height: 100%;
+        margin: 0;
+        padding: 0;
         background: linear-gradient(to bottom, #371819, #0d0907);
         color: #00ffff;
         font-family: 'Share Tech Mono', monospace;
@@ -58,10 +61,3 @@ texto = st.text_input("Digite sua mensagem:")
 if texto:
     resposta = "ALT Neural Response™"  # Simulação de resposta
     st.markdown(f"<div class='neon-response'>🧠 Resposta: {resposta}</div>", unsafe_allow_html=True)
-
-html, body, .stApp {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
