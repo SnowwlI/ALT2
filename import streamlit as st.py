@@ -15,13 +15,7 @@ st.markdown(
         border-radius: 8px;
         box-shadow: 0 0 10px #00ffff;
     }
-    .stButton > button {
-        background-color: #ff00ff;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        box-shadow: 0 0 15px #ff00ff;
-    }
+  
     h1 {
         text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
         animation: cyberpunk 2s ease-in-out infinite;
