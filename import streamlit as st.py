@@ -58,3 +58,10 @@ texto = st.text_input("Digite sua mensagem:")
 if texto:
     resposta = "ALT Neural Response™"  # Simulação de resposta
     st.markdown(f"<div class='neon-response'>🧠 Resposta: {resposta}</div>", unsafe_allow_html=True)
+
+html, body, .stApp {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
