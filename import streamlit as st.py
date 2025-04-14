@@ -24,6 +24,22 @@ st.markdown(
     }
     h1 {
         text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+        animation: cyberpunk 2s ease-in-out infinite;
+    }
+
+    @keyframes cyberpunk {
+        0% {
+            color: #00ffff;
+            text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+        }
+        50% {
+            color: #ff00ff;
+            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+        }
+        100% {
+            color: #00ffff;
+            text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+        }
     }
     </style>
     """,
@@ -35,5 +51,6 @@ st.title("👾 ALT - Interface Neural Cyberpunk")
 texto = st.text_input("Digite sua mensagem:")
 
 if texto:
-    resposta = "Traduzindo mensagem..."  # Aqui você pode conectar seu modelo futuramente
+    # Resposta da ALT, você pode personalizar o que ALT responde.
+    resposta = f"ALT: Oi! Eu sou a Inteligência Artificial de Interface Neural. Como posso ajudar?"
     st.markdown(f"🧠 Resposta: `{resposta}`")
