@@ -4,10 +4,11 @@ st.markdown(
     """
     <style>
     body {
-        background-color: #0d0d0d;
+        background: linear-gradient(to bottom, #371819, #0d0907);
         color: #00ffff;
         font-family: 'Share Tech Mono', monospace;
     }
+
     .stTextInput > div > input {
         background-color: #1a1a1a;
         color: #00ffff;
@@ -15,36 +16,33 @@ st.markdown(
         border-radius: 8px;
         box-shadow: 0 0 10px #00ffff;
     }
-  
-    h1 {
-        text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
-        animation: cyberpunk 2s ease-in-out infinite;
+
+    .stButton > button {
+        background-color: #ff00ff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 0 15px #ff00ff;
     }
 
-    @keyframes cyberpunk {
-        0% {
-            color: #00ffff;
-            text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
-        }
-        50% {
-            color: #ff00ff;
-            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
-        }
-        100% {
-            color: #00ffff;
-            text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
-        }
+    h1 {
+        text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+    }
+
+    .neon-response {
+        color: #ff0044;
+        font-weight: bold;
+        text-shadow: 0 0 5px #ff0044, 0 0 10px #ff0044;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-st.title("👾 ALT - Interface Neural Cyberpunk")
+st.title(" ALT - Interface Neural Cyberpunk")
 
 texto = st.text_input("Digite sua mensagem:")
 
 if texto:
-    # Resposta da ALT, você pode personalizar o que ALT responde.
-    resposta = f"ALT: Oi! Eu sou a Inteligência Artificial de Interface Neural. Como posso ajudar?"
-    st.markdown(f"🧠 Resposta: `{resposta}`")
+    resposta = "ALT Neural Response™"  # Simulação de resposta
+    st.markdown(f"<div class='neon-response'>🧠 Resposta: {resposta}</div>", unsafe_allow_html=True)
